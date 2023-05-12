@@ -1,0 +1,35 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  background-color: var(--background-default);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 70px;
+  align-items: center;
+}
+
+.button {
+  margin-left: 20px;
+}
+
+.logo {
+  width: 190px;
+}
+
+.rightSide {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.name {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  @include regular-text;
+  color: var(--dark-50);
+  padding-left: 20px;
+  border-left: 1px solid var(--border-color-default);
+  margin-left: 20px;
+}

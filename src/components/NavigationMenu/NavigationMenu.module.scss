@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--dark-50);
+}
+
+.navItem {
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    font-weight: 700;
+    color: var(--dark-75);
+  }
+}
+
+.activeNavItem {
+  font-weight: 700;
+  color: var(--dark-75);
+}

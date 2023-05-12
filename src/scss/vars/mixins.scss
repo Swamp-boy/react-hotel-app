@@ -1,0 +1,25 @@
+//@import "src/scss/vars/mixins";
+@mixin main-title {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+@mixin sub-title {
+  font-size: 19px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+@mixin bold-text {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin regular-text {
+  font-size: 14px;
+  line-height: 1.7em;
+  font-weight: 400;
+}

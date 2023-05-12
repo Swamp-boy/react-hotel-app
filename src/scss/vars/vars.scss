@@ -1,0 +1,20 @@
+@import './../fonts/fonts.scss';
+
+body {
+  //colors
+  --dark-100: #1F2041;
+  --dark-75: #575871;
+  --dark-50: #8F90A0;
+  --dark-25: #C7C7CF;
+  --dark-5: #F3F4F5;
+  --purple: #BC9CFF;
+  --green: #6FCF97;
+  --background-default: #ffffff;
+  --white-text: #ffffff;
+
+  --border-color-default: #1F204140;
+  --border-color-focused: #1F204180;
+
+  //border radius
+  --border-radius-default: 4px;
+}

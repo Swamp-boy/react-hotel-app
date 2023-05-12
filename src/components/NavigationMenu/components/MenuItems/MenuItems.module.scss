@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.selectedItem {
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    font-weight: 700;
+    color: var(--dark-75);
+  }
+
+  &:after {
+    content: attr(data-text);
+
+  }
+}
+
+.selectedItem:hover + .expandIcon {
+  path {
+    fill-opacity: 1;
+    fill: var(--dark-75);
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  bottom: -51px;
+}
+
+.dropdownMenuItem {
+  cursor: pointer;
+  line-height: 1.5em;
+
+  &:hover {
+    font-weight: 700;
+    color: var(--dark-75);
+  }
+}
+
