@@ -1,6 +1,6 @@
 import React from "react";
 import ToxinLogo from "../../assets/ToxinLogo.svg";
-import NavigationMenu from "../../components/NavigationMenu/NavigationMenu";
+import NavigationMenu from "./components/NavigationMenu/NavigationMenu";
 import styles from "./HeaderContainer.module.scss";
 import Button, { ButtonSize, ButtonView } from "../../components/Button/Button";
 

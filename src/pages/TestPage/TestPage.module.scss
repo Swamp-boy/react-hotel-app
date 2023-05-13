@@ -1,2 +1,9 @@
 @import "src/scss/vars/mixins";
 
+.test {
+  background: #8F90A0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}

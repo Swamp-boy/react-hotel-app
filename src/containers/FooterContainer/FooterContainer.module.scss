@@ -1,0 +1,55 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  background: var(--background-default);
+}
+
+.topContent {
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botContent {
+  padding: 26px 10%;
+  border-top: 1px solid var(--border-color-default);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.columnDescription {
+  @include regular-text;
+  color: var(--dark-75);
+  width: 260px;
+}
+
+.navColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 150px;
+}
+
+.subscribe {
+  width: 260px;
+}
+
+.title {
+ @include bold-text;
+  color: var(--dark-100);
+}
+
+.text {
+  @include regular-text;
+  color: var(--dark-50);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--dark-100);
+    font-weight: 700;
+  }
+}

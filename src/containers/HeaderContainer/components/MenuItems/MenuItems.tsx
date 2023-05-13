@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ClickAwayListener } from "@mui/base";
 import classNames from "classnames";
-import { TNavBarItem, TNavBarSubItem } from "../../types";
+import { TNavBarItem, TNavBarSubItem } from "../NavigationMenu/types";
 import ExpandIcon from "../../../../assets/ExpandIcon.svg";
 import styles from "./MenuItems.module.scss";
 

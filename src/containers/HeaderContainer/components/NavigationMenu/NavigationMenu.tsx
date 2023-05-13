@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NavigationMenu.module.scss";
 import { navBarMenu } from "./constants";
-import MenuItems from "./components/MenuItems/MenuItems";
+import MenuItems from "../MenuItems/MenuItems";
 
 const NavigationMenu = () => {
   const renderSingleItem = (title: string, id: string) => (

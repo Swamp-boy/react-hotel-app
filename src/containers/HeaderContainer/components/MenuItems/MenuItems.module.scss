@@ -13,11 +13,6 @@
     font-weight: 700;
     color: var(--dark-75);
   }
-
-  &:after {
-    content: attr(data-text);
-
-  }
 }
 
 .selectedItem:hover + .expandIcon {
