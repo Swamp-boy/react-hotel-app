@@ -4,6 +4,7 @@ import ToxinLogo from "../../assets/ToxinLogo.svg";
 import styles from "./FooterContainer.module.scss";
 import { TFooterNavItem } from "./types";
 import { aboutUs, navigation, supportService } from "./constants";
+import TextField from "../../components/TextField/TextField";
 
 const FooterContainer = () => {
   const renderNavColumn = (column: TFooterNavItem) => (
@@ -35,6 +36,8 @@ const FooterContainer = () => {
           <p className={styles.columnDescription}>
             Получайте специальные предложения и новости сервиса
           </p>
+
+          <TextField placeHolder="Email" arrowButton />
         </div>
       </div>
       <div className={styles.botContent} />

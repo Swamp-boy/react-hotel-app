@@ -1,0 +1,45 @@
+@import "src/scss/vars/mixins";
+
+.title {
+  @include bold-text;
+}
+
+.container {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid var(--border-color-default);
+  border-radius: var(--border-radius-default);
+  background: transparent;
+  height: 44px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  display: flex;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  @include regular-text;
+  color: var(--dark-75);
+
+  &::placeholder {
+    color: var(--dark-25);
+    @include regular-text;
+  }
+}
+
+.arrowButton {
+  cursor: pointer;
+  height: 42px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
