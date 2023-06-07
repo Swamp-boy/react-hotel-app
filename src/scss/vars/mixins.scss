@@ -23,3 +23,8 @@
   line-height: 1.7em;
   font-weight: 400;
 }
+
+@mixin component-title {
+  @include bold-text;
+  color: var(--dark-100);
+}

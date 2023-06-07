@@ -13,6 +13,8 @@
 .botContent {
   padding: 26px 10%;
   border-top: 1px solid var(--border-color-default);
+  display: flex;
+  justify-content: space-between;
 }
 
 .column {
@@ -52,4 +54,14 @@
     color: var(--dark-100);
     font-weight: 700;
   }
+}
+
+.rulesText {
+  @include regular-text;
+  color: var(--dark-75);
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
 }

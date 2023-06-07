@@ -1,10 +1,13 @@
 import React from "react";
 import classNames from "classnames";
 import ToxinLogo from "../../assets/ToxinLogo.svg";
-import styles from "./FooterContainer.module.scss";
 import { TFooterNavItem } from "./types";
 import { aboutUs, navigation, supportService } from "./constants";
 import TextField from "../../components/TextField/TextField";
+import TwitterIcon from "../../assets/TwitterIcon.svg";
+import FacebookIcon from "../../assets/FacebookIcon.svg";
+import InstagramIcon from "../../assets/InstagramIcon.svg";
+import styles from "./FooterContainer.module.scss";
 
 const FooterContainer = () => {
   const renderNavColumn = (column: TFooterNavItem) => (
@@ -40,7 +43,17 @@ const FooterContainer = () => {
           <TextField placeHolder="Email" arrowButton />
         </div>
       </div>
-      <div className={styles.botContent} />
+      <div className={styles.botContent}>
+        <p className={styles.rulesText}>
+          Copyright © 2018 Toxin отель. Все права защищены.
+        </p>
+
+        <div className={styles.icons}>
+          <TwitterIcon />
+          <FacebookIcon />
+          <InstagramIcon />
+        </div>
+      </div>
     </div>
   );
 };

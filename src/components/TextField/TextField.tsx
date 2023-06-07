@@ -18,7 +18,7 @@ const TextField: React.FC<ITextField> = ({
   className,
 }) => (
   <div className={className}>
-    {title && <p className={styles.title}>{title}</p>}
+    {title && <h3 className={styles.title}>{title}</h3>}
 
     <div className={styles.container}>
       <input placeholder={placeHolder} className={styles.input} />

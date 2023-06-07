@@ -1,0 +1,27 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  border-radius: var(--border-radius-default);
+  background: var(--background-default);
+  padding: 40px 30px 30px 30px;
+  width: 380px;
+}
+
+.title {
+  @include bold-text;
+  color: var(--dark-100);
+  font-size: 24px;
+  text-transform: none;
+}
+
+.datepickerField {
+  margin-top: var(--space-m);
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guests {
+  margin-top: var(--space-m);
+}

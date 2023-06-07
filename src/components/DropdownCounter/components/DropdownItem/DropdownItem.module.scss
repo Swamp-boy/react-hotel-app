@@ -1,0 +1,38 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 7px 7px 15px;
+  align-items: center;
+}
+
+.text {
+  @include bold-text;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92px;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  color: var(--dark-50);
+  border: 1px solid var(--border-color-default);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.disabledButton {
+  opacity: 0.5;
+}

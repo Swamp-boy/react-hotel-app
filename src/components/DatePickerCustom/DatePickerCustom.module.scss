@@ -1,0 +1,9 @@
+.datepicker {
+  background: var(--background-default);
+  border: 1px solid var(--border-color-default);
+  border-radius: var(--border-radius-default);
+
+  &:hover {
+    border-color: var(--border-color-focused);
+  }
+}

@@ -1,0 +1,64 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  position: relative;
+}
+
+.title {
+  @include bold-text;
+}
+
+.dropdownContainer {
+  border: 1px solid var(--border-color-default);
+  border-radius: var(--border-radius-default);
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid var(--dark-50);
+  }
+}
+
+.dropdownContainer_active {
+  border: 1px solid var(--dark-50);
+  border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+}
+
+.itemsString {
+  width: 73%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.iconContainer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.icon_down {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  background: var(--background-default);
+  border: 1px solid var(--dark-50);
+  box-sizing: border-box;
+  border-top: none;
+}

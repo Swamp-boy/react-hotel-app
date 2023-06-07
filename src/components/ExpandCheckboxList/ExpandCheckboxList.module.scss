@@ -1,0 +1,39 @@
+@import "src/scss/vars/mixins";
+
+.container {
+  position: relative;
+}
+
+.titleContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+  @include bold-text;
+  color: var(--dark-100);
+  user-select: none;
+}
+
+.checkboxesContainer {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expanded {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.checkboxesShow {
+  visibility: visible;
+  transform: translateY(24px);
+}
